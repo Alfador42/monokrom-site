@@ -2,25 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>monoKro̅m</title>
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      background-color: #121212;
-      color: #f5f5f5;
+      background-color: #0e0e0e;
+      background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.02) 0%, transparent 70%),
+                        linear-gradient(135deg, rgba(255,255,255,0.01) 25%, transparent 25%),
+                        linear-gradient(45deg, rgba(255,255,255,0.01) 25%, transparent 25%);
+      color: #ccc;
       font-family: 'Courier New', Courier, monospace;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-image: radial-gradient(#1a1a1a 1px, transparent 0);
-      background-size: 4px 4px;
-    }
-
-    .container {
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -28,10 +22,11 @@
     }
 
     h1 {
-      font-size: 2.5em;
-      font-weight: 600;
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #f5f5f5;
       position: relative;
-      margin: 0.5em 0;
+      letter-spacing: 0.1rem;
     }
 
     h1 .overlined {
@@ -42,38 +37,24 @@
     h1 .overlined::after {
       content: "";
       position: absolute;
-      top: -0.55em;          /* Vertical alignment above the 'o' */
-      left: 0.08em;          /* Slight nudge to center on the 'o' */
-      width: 0.5em;          /* Shortened */
-      height: 2px;           /* Matches font thickness */
+      top: -0.4em;
+      left: 0;
+      width: 100%;
+      height: 2px;
       background-color: #f5f5f5;
     }
 
-    .tagline {
-      font-size: 0.9em;
-      font-weight: 300;
-      color: #999;
-    }
-
-    .flicker-dot {
-      animation: flicker 2s infinite;
-      display: inline-block;
-    }
-
-    @keyframes flicker {
-      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        opacity: 1;
-      }
-      20%, 22%, 24%, 55% {
-        opacity: 0;
-      }
+    p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #888;
+      text-align: center;
+      max-width: 80%;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1><span class="overlined">mono</span>Kro̅m</h1>
-    <p class="tagline">When the spectrum collapses, only function remains<span class="flicker-dot">.</span></p>
-  </div>
+  <h1>monoKr<span class="overlined">o</span>m</h1>
+  <p>When the spectrum collapses, only function remains.</p>
 </body>
 </html>
