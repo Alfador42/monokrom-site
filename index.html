@@ -3,56 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>monoKrōm</title>
+  <title>monoKro̅m</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
-
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      height: 100vh;
-      background-color: #111111;
-      background-image: url('https://www.transparenttextures.com/patterns/black-paper.png');
-      color: #ccc;
-      font-family: 'Fira Mono', monospace;
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #121212; /* darker gray, closer to black */
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=");
+      background-repeat: repeat;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      color: #ccc;
       text-align: center;
     }
 
-    .logo {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #f5f5f5;
-      position: relative;
+    .container {
+      padding: 2rem;
     }
 
-    .logo .bar {
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #eee;
+      position: relative;
+      display: inline-block;
+    }
+
+    .overline {
       position: absolute;
-      top: -0.5em;
-      left: 4.3em;
-      content: " ";
-      height: 3px;
-      width: 1.1em;
-      background-color: #f5f5f5;
+      top: -0.6rem;
+      left: 68%; /* Adjusted for visual alignment */
+      width: 1.2rem;
+      height: 2px;
+      background-color: #eee;
     }
 
     .tagline {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       font-size: 1rem;
       color: #999;
-      letter-spacing: 0.5px;
     }
   </style>
 </head>
 <body>
-  <div class="logo">
-    monoKro<span class="bar"></span>m
-  </div>
-  <div class="tagline">
-    When the spectrum collapses, only function remains.
+  <div class="container">
+    <div class="title">
+      monoKro<span class="overline"></span>m
+    </div>
+    <div class="tagline">
+      When the spectrum collapses, only function remains.
+    </div>
   </div>
 </body>
 </html>
